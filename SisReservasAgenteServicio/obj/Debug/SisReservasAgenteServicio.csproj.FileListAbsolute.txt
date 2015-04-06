@@ -1,0 +1,5 @@
+D:\Sistemas_Uab\SisReservasPresentacion\SisReservasAgenteServicio\bin\SisReservasAgenteServicio.dll
+D:\Sistemas_Uab\SisReservasPresentacion\SisReservasAgenteServicio\bin\SisReservasAgenteServicio.pdb
+D:\Sistemas_Uab\SisReservasPresentacion\SisReservasAgenteServicio\obj\Debug\SisReservasAgenteServicio.dll
+D:\Sistemas_Uab\SisReservasPresentacion\SisReservasAgenteServicio\obj\Debug\SisReservasAgenteServicio.pdb
+D:\Sistemas_Uab\SisReservasPresentacion\SisReservasAgenteServicio\bin\DominioEntidades.SisReservas.dll

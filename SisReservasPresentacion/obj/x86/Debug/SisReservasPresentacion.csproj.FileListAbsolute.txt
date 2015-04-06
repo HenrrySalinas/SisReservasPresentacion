@@ -1,0 +1,14 @@
+D:\Sistemas_Uab\SisReservasPresentacion\SisReservasPresentacion\obj\x86\Debug\SisReservasPresentacion.csprojResolveAssemblyReference.cache
+D:\Sistemas_Uab\SisReservasPresentacion\SisReservasPresentacion\obj\x86\Debug\SisReservasPresentacion.main.resources
+D:\Sistemas_Uab\SisReservasPresentacion\SisReservasPresentacion\obj\x86\Debug\SisReservasPresentacion.Properties.Resources.resources
+D:\Sistemas_Uab\SisReservasPresentacion\SisReservasPresentacion\obj\x86\Debug\SisReservasPresentacion.Sitio.RegistroPersona.resources
+D:\Sistemas_Uab\SisReservasPresentacion\SisReservasPresentacion\obj\x86\Debug\SisReservasPresentacion.csproj.GenerateResource.Cache
+D:\Sistemas_Uab\SisReservasPresentacion\SisReservasPresentacion\bin\Debug\SisReservasPresentacion.exe.config
+D:\Sistemas_Uab\SisReservasPresentacion\SisReservasPresentacion\bin\Debug\SisReservasPresentacion.exe
+D:\Sistemas_Uab\SisReservasPresentacion\SisReservasPresentacion\bin\Debug\SisReservasPresentacion.pdb
+D:\Sistemas_Uab\SisReservasPresentacion\SisReservasPresentacion\bin\Debug\DominioEntidades.SisReservas.dll
+D:\Sistemas_Uab\SisReservasPresentacion\SisReservasPresentacion\bin\Debug\SisReservasAgenteServicio.dll
+D:\Sistemas_Uab\SisReservasPresentacion\SisReservasPresentacion\bin\Debug\SisReservasAgenteServicio.pdb
+D:\Sistemas_Uab\SisReservasPresentacion\SisReservasPresentacion\obj\x86\Debug\SisReservasPresentacion.exe
+D:\Sistemas_Uab\SisReservasPresentacion\SisReservasPresentacion\obj\x86\Debug\SisReservasPresentacion.pdb
+D:\Sistemas_Uab\SisReservasPresentacion\SisReservasPresentacion\obj\x86\Debug\SisReservasPresentacion.Sitio.VistaAsientos.resources

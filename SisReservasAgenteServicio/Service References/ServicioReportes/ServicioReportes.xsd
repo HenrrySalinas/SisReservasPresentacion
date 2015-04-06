@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/SisReservasCore/ServicioReportes.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" />
+  <xs:element name="ListarGenero">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCredencial" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" minOccurs="0" name="oListarGenero" nillable="true" type="q1:O_LISTAR_GENERO" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarGeneroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" minOccurs="0" name="ListarGeneroResult" nillable="true" type="q2:ArrayOfO_LISTAR_GENERO" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPersona">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCredencial" nillable="true" type="xs:string" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" minOccurs="0" name="oListarPersona" nillable="true" type="q3:O_LISTAR_PERSONA" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPersonaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" minOccurs="0" name="ListarPersonaResult" nillable="true" type="q4:ArrayOfO_LISTAR_PERSONA" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarDocumento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCredencial" nillable="true" type="xs:string" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" minOccurs="0" name="oListarDocumento" nillable="true" type="q5:O_LISTAR_DOCUMENTO" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarDocumentoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" minOccurs="0" name="ListarDocumentoResult" nillable="true" type="q6:ArrayOfO_LISTAR_DOCUMENTO" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
