@@ -34,13 +34,12 @@
             // lblAsiento1
             // 
             this.lblAsiento1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.lblAsiento1.Location = new System.Drawing.Point(57, 56);
+            this.lblAsiento1.Location = new System.Drawing.Point(65, 58);
             this.lblAsiento1.Name = "lblAsiento1";
             this.lblAsiento1.Size = new System.Drawing.Size(50, 50);
             this.lblAsiento1.TabIndex = 0;
             this.lblAsiento1.Text = "1v";
             this.lblAsiento1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            
             // 
             // VistaAsientos
             // 
@@ -50,6 +49,7 @@
             this.Controls.Add(this.lblAsiento1);
             this.Name = "VistaAsientos";
             this.Text = "VistaAsientos";
+            this.Load += new System.EventHandler(this.VistaAsientos_Load);
             this.ResumeLayout(false);
 
         }

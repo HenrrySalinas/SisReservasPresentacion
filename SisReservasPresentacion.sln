@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SisReservasAgenteServicio", "SisReservasAgenteServicio\SisReservasAgenteServicio.csproj", "{5BA5EB2B-8C30-4AD2-9AF0-782DB6998501}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SisReservasPresentacion", "SisReservasPresentacion\SisReservasPresentacion.csproj", "{A26015EA-0A14-4AC6-9820-58D14505EFC0}"

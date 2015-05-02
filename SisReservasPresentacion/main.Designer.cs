@@ -33,11 +33,11 @@
             this.operacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seleccionDeAsientosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cerrarTodoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verRutasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.verRutasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -57,8 +57,8 @@
             // 
             this.operacionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.seleccionDeAsientosToolStripMenuItem,
-            this.cerrarTodoToolStripMenuItem,
-            this.verRutasToolStripMenuItem});
+            this.verRutasToolStripMenuItem,
+            this.cerrarTodoToolStripMenuItem});
             this.operacionesToolStripMenuItem.Name = "operacionesToolStripMenuItem";
             this.operacionesToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
             this.operacionesToolStripMenuItem.Text = "Operaciones";
@@ -76,6 +76,13 @@
             this.cerrarTodoToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.cerrarTodoToolStripMenuItem.Text = "Cerrar Todo";
             this.cerrarTodoToolStripMenuItem.Click += new System.EventHandler(this.cerrarTodoToolStripMenuItem_Click);
+            // 
+            // verRutasToolStripMenuItem
+            // 
+            this.verRutasToolStripMenuItem.Name = "verRutasToolStripMenuItem";
+            this.verRutasToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.verRutasToolStripMenuItem.Text = "Ver Rutas";
+            this.verRutasToolStripMenuItem.Click += new System.EventHandler(this.verRutasToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
@@ -100,13 +107,6 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
             this.toolStripStatusLabel.Text = "Estado";
             // 
-            // verRutasToolStripMenuItem
-            // 
-            this.verRutasToolStripMenuItem.Name = "verRutasToolStripMenuItem";
-            this.verRutasToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
-            this.verRutasToolStripMenuItem.Text = "Ver Rutas";
-            this.verRutasToolStripMenuItem.Click += new System.EventHandler(this.verRutasToolStripMenuItem_Click);
-            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -117,7 +117,9 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip;
             this.Name = "main";
-            this.Text = "main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Menu Principal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.main_Load);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();

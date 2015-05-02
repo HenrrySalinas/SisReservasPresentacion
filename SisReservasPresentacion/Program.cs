@@ -14,9 +14,13 @@ namespace SisReservasPresentacion
         [STAThread]
         static void Main()
         {
+            /*
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new main());
+            */
+            var uiMain = new uiMain();
+            uiMain.ShowDialog();
         }
     }
 }

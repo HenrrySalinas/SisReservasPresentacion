@@ -23,6 +23,21 @@ namespace SisReservasAgenteServicio.ServicioGestion {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioGestion/RegistrarDocumento", ReplyAction="http://tempuri.org/IServicioGestion/RegistrarDocumentoResponse")]
         System.Collections.Generic.List<DominioEntidades.SisReservas.O_RESULTADO> RegistrarDocumento(string strCredencial, DominioEntidades.SisReservas.O_LISTAR_DOCUMENTO oDocumento, ref string strMensajeError);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioGestion/RegistrarBoleto", ReplyAction="http://tempuri.org/IServicioGestion/RegistrarBoletoResponse")]
+        System.Collections.Generic.List<DominioEntidades.SisReservas.O_RESULTADO> RegistrarBoleto(string strCredencial, DominioEntidades.SisReservas.O_BOLETO oBoleto, ref string strMensajeError);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioGestion/RegistrarAsiento", ReplyAction="http://tempuri.org/IServicioGestion/RegistrarAsientoResponse")]
+        System.Collections.Generic.List<DominioEntidades.SisReservas.O_RESULTADO> RegistrarAsiento(string strCredencial, DominioEntidades.SisReservas.O_ASIENTO oAsiento, ref string strMensajeError);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioGestion/RegistrarDetalleBoleto", ReplyAction="http://tempuri.org/IServicioGestion/RegistrarDetalleBoletoResponse")]
+        System.Collections.Generic.List<DominioEntidades.SisReservas.O_RESULTADO> RegistrarDetalleBoleto(string strCredencial, DominioEntidades.SisReservas.O_DETALLE_BOLETO oDetalleBoleto, ref string strMensajeError);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioGestion/RegistrarAsientoRuta", ReplyAction="http://tempuri.org/IServicioGestion/RegistrarAsientoRutaResponse")]
+        System.Collections.Generic.List<DominioEntidades.SisReservas.O_RESULTADO> RegistrarAsientoRuta(string strCredencial, DominioEntidades.SisReservas.O_ASIENTO_RUTA oAsientoRuta, ref string strMensajeError);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioGestion/RegistrarRuta", ReplyAction="http://tempuri.org/IServicioGestion/RegistrarRutaResponse")]
+        System.Collections.Generic.List<DominioEntidades.SisReservas.O_RESULTADO> RegistrarRuta(string strCredencial, DominioEntidades.SisReservas.O_RUTA oRuta, ref string strMensajeError);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -62,6 +77,26 @@ namespace SisReservasAgenteServicio.ServicioGestion {
         
         public System.Collections.Generic.List<DominioEntidades.SisReservas.O_RESULTADO> RegistrarDocumento(string strCredencial, DominioEntidades.SisReservas.O_LISTAR_DOCUMENTO oDocumento, ref string strMensajeError) {
             return base.Channel.RegistrarDocumento(strCredencial, oDocumento, ref strMensajeError);
+        }
+        
+        public System.Collections.Generic.List<DominioEntidades.SisReservas.O_RESULTADO> RegistrarBoleto(string strCredencial, DominioEntidades.SisReservas.O_BOLETO oBoleto, ref string strMensajeError) {
+            return base.Channel.RegistrarBoleto(strCredencial, oBoleto, ref strMensajeError);
+        }
+        
+        public System.Collections.Generic.List<DominioEntidades.SisReservas.O_RESULTADO> RegistrarAsiento(string strCredencial, DominioEntidades.SisReservas.O_ASIENTO oAsiento, ref string strMensajeError) {
+            return base.Channel.RegistrarAsiento(strCredencial, oAsiento, ref strMensajeError);
+        }
+        
+        public System.Collections.Generic.List<DominioEntidades.SisReservas.O_RESULTADO> RegistrarDetalleBoleto(string strCredencial, DominioEntidades.SisReservas.O_DETALLE_BOLETO oDetalleBoleto, ref string strMensajeError) {
+            return base.Channel.RegistrarDetalleBoleto(strCredencial, oDetalleBoleto, ref strMensajeError);
+        }
+        
+        public System.Collections.Generic.List<DominioEntidades.SisReservas.O_RESULTADO> RegistrarAsientoRuta(string strCredencial, DominioEntidades.SisReservas.O_ASIENTO_RUTA oAsientoRuta, ref string strMensajeError) {
+            return base.Channel.RegistrarAsientoRuta(strCredencial, oAsientoRuta, ref strMensajeError);
+        }
+        
+        public System.Collections.Generic.List<DominioEntidades.SisReservas.O_RESULTADO> RegistrarRuta(string strCredencial, DominioEntidades.SisReservas.O_RUTA oRuta, ref string strMensajeError) {
+            return base.Channel.RegistrarRuta(strCredencial, oRuta, ref strMensajeError);
         }
     }
 }

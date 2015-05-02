@@ -37,8 +37,8 @@
             this.pnlTipoDocumento = new System.Windows.Forms.Panel();
             this.btnRegistrarPersona = new System.Windows.Forms.Button();
             this.pnlGenero = new System.Windows.Forms.Panel();
-            this.rdoMasculino = new System.Windows.Forms.RadioButton();
             this.rdoFemenino = new System.Windows.Forms.RadioButton();
+            this.rdoMasculino = new System.Windows.Forms.RadioButton();
             this.pnlTipoDocumento.SuspendLayout();
             this.pnlGenero.SuspendLayout();
             this.SuspendLayout();
@@ -74,6 +74,7 @@
             this.txtCi.Name = "txtCi";
             this.txtCi.Size = new System.Drawing.Size(200, 20);
             this.txtCi.TabIndex = 3;
+            this.txtCi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCi_KeyPress);
             // 
             // rdoCi
             // 
@@ -125,6 +126,17 @@
             this.pnlGenero.Size = new System.Drawing.Size(200, 26);
             this.pnlGenero.TabIndex = 9;
             // 
+            // rdoFemenino
+            // 
+            this.rdoFemenino.AutoSize = true;
+            this.rdoFemenino.Location = new System.Drawing.Point(93, 3);
+            this.rdoFemenino.Name = "rdoFemenino";
+            this.rdoFemenino.Size = new System.Drawing.Size(71, 17);
+            this.rdoFemenino.TabIndex = 10;
+            this.rdoFemenino.TabStop = true;
+            this.rdoFemenino.Text = "Femenino";
+            this.rdoFemenino.UseVisualStyleBackColor = true;
+            // 
             // rdoMasculino
             // 
             this.rdoMasculino.AutoSize = true;
@@ -136,17 +148,6 @@
             this.rdoMasculino.TabStop = true;
             this.rdoMasculino.Text = "Masculino";
             this.rdoMasculino.UseVisualStyleBackColor = true;
-            // 
-            // rdoFemenino
-            // 
-            this.rdoFemenino.AutoSize = true;
-            this.rdoFemenino.Location = new System.Drawing.Point(93, 3);
-            this.rdoFemenino.Name = "rdoFemenino";
-            this.rdoFemenino.Size = new System.Drawing.Size(71, 17);
-            this.rdoFemenino.TabIndex = 10;
-            this.rdoFemenino.TabStop = true;
-            this.rdoFemenino.Text = "Femenino";
-            this.rdoFemenino.UseVisualStyleBackColor = true;
             // 
             // RegistroPersona
             // 

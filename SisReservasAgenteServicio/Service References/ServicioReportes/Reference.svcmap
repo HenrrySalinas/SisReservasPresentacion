@@ -23,11 +23,11 @@
     <MetadataSource Address="http://localhost/SisReservasCore/ServicioReportes.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServicioReportes.xsd" MetadataType="Schema" ID="d64dda0c-f4b0-44f4-a889-fabcc00de849" SourceId="1" SourceUrl="http://localhost/SisReservasCore/ServicioReportes.svc?xsd=xsd0" />
-    <MetadataFile FileName="ServicioReportes.disco" MetadataType="Disco" ID="d178823b-7d3e-4fa6-bfd1-135a591c8e7f" SourceId="1" SourceUrl="http://localhost/SisReservasCore/ServicioReportes.svc?disco" />
-    <MetadataFile FileName="ServicioReportes1.xsd" MetadataType="Schema" ID="d6ac9629-575d-4080-bbed-a7e88a8c6255" SourceId="1" SourceUrl="http://localhost/SisReservasCore/ServicioReportes.svc?xsd=xsd1" />
-    <MetadataFile FileName="ServicioReportes.wsdl" MetadataType="Wsdl" ID="7fb5b61f-2c65-4675-99de-b9d04d1509fa" SourceId="1" SourceUrl="http://localhost/SisReservasCore/ServicioReportes.svc?wsdl" />
-    <MetadataFile FileName="ServicioReportes2.xsd" MetadataType="Schema" ID="fad173be-4a61-46f1-ba3e-a6f1db058da4" SourceId="1" SourceUrl="http://localhost/SisReservasCore/ServicioReportes.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServicioReportes3.xsd" MetadataType="Schema" ID="a909c5d8-49e4-45fb-a478-e90cbaeae075" SourceId="1" SourceUrl="http://localhost/SisReservasCore/ServicioReportes.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServicioReportes1.disco" MetadataType="Disco" ID="f8aaf3cc-9d5a-4c7b-bbbc-22b49aa44b7a" SourceId="1" SourceUrl="http://localhost/SisReservasCore/ServicioReportes.svc?disco" />
+    <MetadataFile FileName="ServicioReportes4.xsd" MetadataType="Schema" ID="294ec1e6-dbd7-4c9d-ac72-12b4daeb2cc3" SourceId="1" SourceUrl="http://localhost/SisReservasCore/ServicioReportes.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServicioReportes1.wsdl" MetadataType="Wsdl" ID="ad298c8d-a428-4c2f-8094-7a7f10791ba4" SourceId="1" SourceUrl="http://localhost/SisReservasCore/ServicioReportes.svc?wsdl" />
+    <MetadataFile FileName="ServicioReportes5.xsd" MetadataType="Schema" ID="b85ebe70-ee3c-48b9-adba-a94be909e737" SourceId="1" SourceUrl="http://localhost/SisReservasCore/ServicioReportes.svc?xsd=xsd2" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

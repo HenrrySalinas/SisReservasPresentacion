@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/SisReservasCore/ServicioGestion.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" />
+  <xs:element name="RegistrarGenero">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCredencial" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" minOccurs="0" name="oGenero" nillable="true" type="q1:O_LISTAR_GENERO" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarGeneroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" minOccurs="0" name="RegistrarGeneroResult" nillable="true" type="q2:ArrayOfO_RESULTADO" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarPersona">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCredencial" nillable="true" type="xs:string" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" minOccurs="0" name="oPersona" nillable="true" type="q3:O_LISTAR_PERSONA" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarPersonaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" minOccurs="0" name="RegistrarPersonaResult" nillable="true" type="q4:ArrayOfO_RESULTADO" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarDocumento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCredencial" nillable="true" type="xs:string" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" minOccurs="0" name="oDocumento" nillable="true" type="q5:O_LISTAR_DOCUMENTO" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarDocumentoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" minOccurs="0" name="RegistrarDocumentoResult" nillable="true" type="q6:ArrayOfO_RESULTADO" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarBoleto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCredencial" nillable="true" type="xs:string" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" minOccurs="0" name="oBoleto" nillable="true" type="q7:O_BOLETO" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarBoletoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" minOccurs="0" name="RegistrarBoletoResult" nillable="true" type="q8:ArrayOfO_RESULTADO" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarAsiento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCredencial" nillable="true" type="xs:string" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" minOccurs="0" name="oAsiento" nillable="true" type="q9:O_ASIENTO" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarAsientoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" minOccurs="0" name="RegistrarAsientoResult" nillable="true" type="q10:ArrayOfO_RESULTADO" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarDetalleBoleto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCredencial" nillable="true" type="xs:string" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" minOccurs="0" name="oDetalleBoleto" nillable="true" type="q11:O_DETALLE_BOLETO" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarDetalleBoletoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" minOccurs="0" name="RegistrarDetalleBoletoResult" nillable="true" type="q12:ArrayOfO_RESULTADO" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarAsientoRuta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCredencial" nillable="true" type="xs:string" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" minOccurs="0" name="oAsientoRuta" nillable="true" type="q13:O_ASIENTO_RUTA" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarAsientoRutaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" minOccurs="0" name="RegistrarAsientoRutaResult" nillable="true" type="q14:ArrayOfO_RESULTADO" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarRuta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCredencial" nillable="true" type="xs:string" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" minOccurs="0" name="oRuta" nillable="true" type="q15:O_RUTA" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarRutaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" minOccurs="0" name="RegistrarRutaResult" nillable="true" type="q16:ArrayOfO_RESULTADO" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

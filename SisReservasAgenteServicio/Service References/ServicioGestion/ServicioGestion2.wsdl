@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="https://servicios.anh.gob.bo/WSSisReservas/ServicioGestion.svc" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServicioGestion" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="https://servicios.anh.gob.bo/WSSisReservas/ServicioGestion.svc" location="http://localhost/SisReservasCore/ServicioGestion.svc?wsdl=wsdl0" />
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/SisReservasCore/ServicioGestion.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/SisReservasCore/ServicioGestion.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/SisReservasCore/ServicioGestion.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServicioGestion_RegistrarGenero_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarGenero" />
+  </wsdl:message>
+  <wsdl:message name="IServicioGestion_RegistrarGenero_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarGeneroResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioGestion_RegistrarPersona_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarPersona" />
+  </wsdl:message>
+  <wsdl:message name="IServicioGestion_RegistrarPersona_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarPersonaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioGestion_RegistrarDocumento_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarDocumento" />
+  </wsdl:message>
+  <wsdl:message name="IServicioGestion_RegistrarDocumento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarDocumentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioGestion_RegistrarBoleto_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarBoleto" />
+  </wsdl:message>
+  <wsdl:message name="IServicioGestion_RegistrarBoleto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarBoletoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioGestion_RegistrarAsiento_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarAsiento" />
+  </wsdl:message>
+  <wsdl:message name="IServicioGestion_RegistrarAsiento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarAsientoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioGestion_RegistrarDetalleBoleto_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarDetalleBoleto" />
+  </wsdl:message>
+  <wsdl:message name="IServicioGestion_RegistrarDetalleBoleto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarDetalleBoletoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioGestion_RegistrarAsientoRuta_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarAsientoRuta" />
+  </wsdl:message>
+  <wsdl:message name="IServicioGestion_RegistrarAsientoRuta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarAsientoRutaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioGestion_RegistrarRuta_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarRuta" />
+  </wsdl:message>
+  <wsdl:message name="IServicioGestion_RegistrarRuta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarRutaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServicioGestion">
+    <wsdl:operation name="RegistrarGenero">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioGestion/RegistrarGenero" message="tns:IServicioGestion_RegistrarGenero_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioGestion/RegistrarGeneroResponse" message="tns:IServicioGestion_RegistrarGenero_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarPersona">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioGestion/RegistrarPersona" message="tns:IServicioGestion_RegistrarPersona_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioGestion/RegistrarPersonaResponse" message="tns:IServicioGestion_RegistrarPersona_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarDocumento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioGestion/RegistrarDocumento" message="tns:IServicioGestion_RegistrarDocumento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioGestion/RegistrarDocumentoResponse" message="tns:IServicioGestion_RegistrarDocumento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarBoleto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioGestion/RegistrarBoleto" message="tns:IServicioGestion_RegistrarBoleto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioGestion/RegistrarBoletoResponse" message="tns:IServicioGestion_RegistrarBoleto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarAsiento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioGestion/RegistrarAsiento" message="tns:IServicioGestion_RegistrarAsiento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioGestion/RegistrarAsientoResponse" message="tns:IServicioGestion_RegistrarAsiento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarDetalleBoleto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioGestion/RegistrarDetalleBoleto" message="tns:IServicioGestion_RegistrarDetalleBoleto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioGestion/RegistrarDetalleBoletoResponse" message="tns:IServicioGestion_RegistrarDetalleBoleto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarAsientoRuta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioGestion/RegistrarAsientoRuta" message="tns:IServicioGestion_RegistrarAsientoRuta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioGestion/RegistrarAsientoRutaResponse" message="tns:IServicioGestion_RegistrarAsientoRuta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarRuta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioGestion/RegistrarRuta" message="tns:IServicioGestion_RegistrarRuta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioGestion/RegistrarRutaResponse" message="tns:IServicioGestion_RegistrarRuta_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="ServicioGestion">
+    <wsdl:port name="SisReservasGestionEndPoint" binding="i0:SisReservasGestionEndPoint">
+      <soap:address location="http://localhost/SisReservasCore/ServicioGestion.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="O_LISTAR_GENERO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="APP_ID_USUARIO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="AUD_ESTADO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DESCRIPCION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FECHA_REGISTRO" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID_GENERO" nillable="true" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_LISTAR_GENERO" nillable="true" type="tns:O_LISTAR_GENERO" />
+  <xs:complexType name="ArrayOfO_LISTAR_GENERO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="O_LISTAR_GENERO" nillable="true" type="tns:O_LISTAR_GENERO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfO_LISTAR_GENERO" nillable="true" type="tns:ArrayOfO_LISTAR_GENERO" />
+  <xs:complexType name="O_LISTAR_PERSONA">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="APP_ID_USUARIO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="AP_MATERNO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AP_PATERNO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AUD_ESTADO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DIRECCION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FECHA_NACIMIENTO" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FECHA_REGISTRO" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="GENERO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_GENERO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_PERSONA" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_TIPO_PERSONA" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="NOMBRE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TIPO_PERSONA" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_LISTAR_PERSONA" nillable="true" type="tns:O_LISTAR_PERSONA" />
+  <xs:complexType name="ArrayOfO_LISTAR_PERSONA">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="O_LISTAR_PERSONA" nillable="true" type="tns:O_LISTAR_PERSONA" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfO_LISTAR_PERSONA" nillable="true" type="tns:ArrayOfO_LISTAR_PERSONA" />
+  <xs:complexType name="O_LISTAR_DOCUMENTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="APP_ID_USUARIO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="AUD_ESTADO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DESCRIPCION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FECHA_REGISTRO" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID_DOCUMENTO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_PERSONA" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_TIPO_DOCUMENTO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="NUMERO_DOCUMENTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TIPO_DOCUMENTO" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_LISTAR_DOCUMENTO" nillable="true" type="tns:O_LISTAR_DOCUMENTO" />
+  <xs:complexType name="ArrayOfO_LISTAR_DOCUMENTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="O_LISTAR_DOCUMENTO" nillable="true" type="tns:O_LISTAR_DOCUMENTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfO_LISTAR_DOCUMENTO" nillable="true" type="tns:ArrayOfO_LISTAR_DOCUMENTO" />
+  <xs:complexType name="O_LISTAR_BOLETO_COMPLETO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AUD_ESTADO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="FECHA_REGISTRO" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID_ASIENTO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_BOLETO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_DETALLE_BOLETO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_PERSONA" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_RUTA" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_SUCURSAL" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_TIPO_ASIENTO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_USUARIO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="NUMERO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TIPO_ASIENTO" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_LISTAR_BOLETO_COMPLETO" nillable="true" type="tns:O_LISTAR_BOLETO_COMPLETO" />
+  <xs:complexType name="ArrayOfO_LISTAR_BOLETO_COMPLETO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="O_LISTAR_BOLETO_COMPLETO" nillable="true" type="tns:O_LISTAR_BOLETO_COMPLETO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfO_LISTAR_BOLETO_COMPLETO" nillable="true" type="tns:ArrayOfO_LISTAR_BOLETO_COMPLETO" />
+  <xs:complexType name="O_LISTAR_ASIENTO_COMPLETO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ASIENTO_RUTA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AUD_ESTADO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ESTADO_ASIENTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FECHA_REGISTRO" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID_ASIENTO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_ASIENTO_RUTA" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_ESTADO_ASIENTO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_RUTA" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_TIPO_ASIENTO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="NUMERO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TIPO_ASIENTO" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_LISTAR_ASIENTO_COMPLETO" nillable="true" type="tns:O_LISTAR_ASIENTO_COMPLETO" />
+  <xs:complexType name="ArrayOfO_LISTAR_ASIENTO_COMPLETO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="O_LISTAR_ASIENTO_COMPLETO" nillable="true" type="tns:O_LISTAR_ASIENTO_COMPLETO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfO_LISTAR_ASIENTO_COMPLETO" nillable="true" type="tns:ArrayOfO_LISTAR_ASIENTO_COMPLETO" />
+  <xs:complexType name="O_LISTAR_RUTA_COMPLETO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AUD_ESTADO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="HORA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_CIUDAD_DESTINO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_CIUDAD_ORIGEN" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_CONDUCTOR" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_FLOTA" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_HORARIO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_PRECIO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_RUTA" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_TIPO_FLOTA" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="MODELO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NRO_ASIENTOS" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PLACA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PRECIO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TIPO_FLOTA" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_LISTAR_RUTA_COMPLETO" nillable="true" type="tns:O_LISTAR_RUTA_COMPLETO" />
+  <xs:complexType name="ArrayOfO_LISTAR_RUTA_COMPLETO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="O_LISTAR_RUTA_COMPLETO" nillable="true" type="tns:O_LISTAR_RUTA_COMPLETO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfO_LISTAR_RUTA_COMPLETO" nillable="true" type="tns:ArrayOfO_LISTAR_RUTA_COMPLETO" />
+  <xs:complexType name="O_CIUDAD">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AUD_ESTADO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CIUDAD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_CIUDAD" nillable="true" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_CIUDAD" nillable="true" type="tns:O_CIUDAD" />
+  <xs:complexType name="ArrayOfO_CIUDAD">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="O_CIUDAD" nillable="true" type="tns:O_CIUDAD" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfO_CIUDAD" nillable="true" type="tns:ArrayOfO_CIUDAD" />
+</xs:schema>

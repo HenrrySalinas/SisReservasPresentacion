@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -12,7 +13,18 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SisReservasAgenteServicio</RootNamespace>
     <AssemblyName>SisReservasAgenteServicio</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,6 +34,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -30,18 +43,19 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DominioEntidades.SisReservas">
       <HintPath>..\SisReservasPresentacion\Dll\ClasesDominio\DominioEntidades.SisReservas.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
-    <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.EnterpriseServices" />
@@ -55,35 +69,39 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Properties\DataSources\DominioEntidades.SisReservas.O_CIUDAD.datasource" />
+    <Content Include="Properties\DataSources\DominioEntidades.SisReservas.O_LISTAR_ASIENTO_COMPLETO.datasource" />
+    <Content Include="Properties\DataSources\DominioEntidades.SisReservas.O_LISTAR_BOLETO_COMPLETO.datasource" />
     <None Include="Properties\DataSources\DominioEntidades.SisReservas.O_LISTAR_DOCUMENTO.datasource" />
     <None Include="Properties\DataSources\DominioEntidades.SisReservas.O_LISTAR_GENERO.datasource" />
     <None Include="Properties\DataSources\DominioEntidades.SisReservas.O_LISTAR_PERSONA.datasource" />
+    <Content Include="Properties\DataSources\DominioEntidades.SisReservas.O_LISTAR_RUTA_COMPLETO.datasource" />
     <None Include="Properties\DataSources\DominioEntidades.SisReservas.O_RESULTADO.datasource" />
-    <None Include="Service References\ServicioGestion\ServicioGestion.wsdl" />
-    <None Include="Service References\ServicioGestion\ServicioGestion.xsd">
+    <None Include="Service References\ServicioGestion\ServicioGestion2.wsdl" />
+    <None Include="Service References\ServicioGestion\ServicioGestion3.wsdl" />
+    <None Include="Service References\ServicioGestion\ServicioGestion3.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ServicioGestion\ServicioGestion1.wsdl" />
-    <None Include="Service References\ServicioGestion\ServicioGestion1.xsd">
+    <None Include="Service References\ServicioGestion\ServicioGestion4.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ServicioGestion\ServicioGestion2.xsd">
+    <None Include="Service References\ServicioGestion\ServicioGestion5.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ServicioReportes\ServicioReportes.disco" />
     <None Include="Service References\ServicioReportes\configuration91.svcinfo" />
     <None Include="Service References\ServicioReportes\configuration.svcinfo" />
     <None Include="Service References\ServicioReportes\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Service References\ServicioGestion\ServicioGestion.disco" />
     <None Include="Service References\ServicioGestion\configuration91.svcinfo" />
     <None Include="Service References\ServicioGestion\configuration.svcinfo" />
     <None Include="Service References\ServicioGestion\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Service References\ServicioGestion\ServicioGestion1.disco" />
+    <None Include="Service References\ServicioReportes\ServicioReportes1.disco" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -93,11 +111,14 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <None Include="Service References\ServicioReportes\ServicioReportes.wsdl" />
-    <None Include="Service References\ServicioReportes\ServicioReportes1.xsd">
+    <None Include="Service References\ServicioReportes\ServicioReportes1.wsdl" />
+    <None Include="Service References\ServicioReportes\ServicioReportes3.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ServicioReportes\ServicioReportes2.xsd">
+    <None Include="Service References\ServicioReportes\ServicioReportes4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioReportes\ServicioReportes5.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
@@ -122,13 +143,13 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServicioReportes\ServicioReportes.xsd">
-      <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ProjectExtensions>
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
@@ -144,7 +165,6 @@
           <CustomServerUrl>
           </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
-          <EnableWcfTestClientForSVCDefaultValue>True</EnableWcfTestClientForSVCDefaultValue>
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>

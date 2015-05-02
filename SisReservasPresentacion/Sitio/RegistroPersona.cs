@@ -116,7 +116,6 @@ namespace SisReservasPresentacion.Sitio
                     oDocumento.ID_TIPO_DOCUMENTO = documento;
                     oDocumento.ID_PERSONA = idUltimaPersona;
                     var rstDocumento = servicioGestion.RegistrarDocumento(strCredencial, oDocumento, ref strMensajeError);
-
                 }
             }
             catch (Exception ex)
@@ -124,6 +123,16 @@ namespace SisReservasPresentacion.Sitio
 
                 throw new Exception("Error 600: " + ex.Message);
             }
+        }
+
+        private void txtCi_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        public void crear_menu()
+        {
+            
         }
 
 

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/DominioEntidades.SisReservas" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="O_LISTAR_GENERO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="APP_ID_USUARIO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="AUD_ESTADO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DESCRIPCION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FECHA_REGISTRO" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID_GENERO" nillable="true" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_LISTAR_GENERO" nillable="true" type="tns:O_LISTAR_GENERO" />
+  <xs:complexType name="ArrayOfO_RESULTADO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="O_RESULTADO" nillable="true" type="tns:O_RESULTADO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfO_RESULTADO" nillable="true" type="tns:ArrayOfO_RESULTADO" />
+  <xs:complexType name="O_RESULTADO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID_TABLA" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="MENSAJE_ERROR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RESULTADO" nillable="true" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_RESULTADO" nillable="true" type="tns:O_RESULTADO" />
+  <xs:complexType name="O_LISTAR_PERSONA">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="APP_ID_USUARIO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="AP_MATERNO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AP_PATERNO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AUD_ESTADO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DIRECCION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FECHA_NACIMIENTO" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FECHA_REGISTRO" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="GENERO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_GENERO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_PERSONA" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_TIPO_PERSONA" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="NOMBRE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TIPO_PERSONA" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_LISTAR_PERSONA" nillable="true" type="tns:O_LISTAR_PERSONA" />
+  <xs:complexType name="O_LISTAR_DOCUMENTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="APP_ID_USUARIO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="AUD_ESTADO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DESCRIPCION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FECHA_REGISTRO" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID_DOCUMENTO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_PERSONA" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_TIPO_DOCUMENTO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="NUMERO_DOCUMENTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TIPO_DOCUMENTO" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_LISTAR_DOCUMENTO" nillable="true" type="tns:O_LISTAR_DOCUMENTO" />
+  <xs:complexType name="O_BOLETO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID_BOLETO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_RUTA" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_SUCURSAL" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_USUARIO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="O_DATOS_AUD" nillable="true" type="tns:O_DATOS_AUD" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_BOLETO" nillable="true" type="tns:O_BOLETO" />
+  <xs:complexType name="O_DATOS_AUD">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="APP_ID_USUARIO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="AUD_ESTADO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="FECHA_REGISTRO" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_DATOS_AUD" nillable="true" type="tns:O_DATOS_AUD" />
+  <xs:complexType name="O_ASIENTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID_ASIENTO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_TIPO_ASIENTO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="NUMERO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="O_DATOS_AUD" nillable="true" type="tns:O_DATOS_AUD" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_ASIENTO" nillable="true" type="tns:O_ASIENTO" />
+  <xs:complexType name="O_DETALLE_BOLETO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID_ASIENTO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_BOLETO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_DETALLE_BOLETO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_PERSONA" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="O_DATOS_AUD" nillable="true" type="tns:O_DATOS_AUD" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_DETALLE_BOLETO" nillable="true" type="tns:O_DETALLE_BOLETO" />
+  <xs:complexType name="O_ASIENTO_RUTA">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DESCRIPCION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_ASIENTO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_ASIENTO_RUTA" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_ESTADO_ASIENTO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_RUTA" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="O_DATOS_AUD" nillable="true" type="tns:O_DATOS_AUD" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_ASIENTO_RUTA" nillable="true" type="tns:O_ASIENTO_RUTA" />
+  <xs:complexType name="O_RUTA">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID_CIUDAD_DESTINO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_CIUDAD_ORIGEN" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_CONDUCTOR" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_FLOTA" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_HORARIO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_PRECIO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_RUTA" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="O_DATOS_AUD" nillable="true" type="tns:O_DATOS_AUD" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_RUTA" nillable="true" type="tns:O_RUTA" />
+</xs:schema>

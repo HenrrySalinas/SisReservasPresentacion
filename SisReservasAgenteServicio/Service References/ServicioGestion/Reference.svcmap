@@ -23,12 +23,12 @@
     <MetadataSource Address="http://localhost/SisReservasCore/ServicioGestion.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServicioGestion.disco" MetadataType="Disco" ID="2618e096-7732-4ece-b744-e685ce0d5637" SourceId="1" SourceUrl="http://localhost/SisReservasCore/ServicioGestion.svc?disco" />
-    <MetadataFile FileName="ServicioGestion.wsdl" MetadataType="Wsdl" ID="91585ed6-f493-4c4f-a61a-120a880fd2ab" SourceId="1" SourceUrl="http://localhost/SisReservasCore/ServicioGestion.svc?wsdl" />
-    <MetadataFile FileName="ServicioGestion1.wsdl" MetadataType="Wsdl" ID="0f4e8ead-0710-44a8-b9de-90da5acd056c" SourceId="1" SourceUrl="http://localhost/SisReservasCore/ServicioGestion.svc?wsdl=wsdl0" />
-    <MetadataFile FileName="ServicioGestion.xsd" MetadataType="Schema" ID="594abeef-f161-4aa8-aec9-962c4562e235" SourceId="1" SourceUrl="http://localhost/SisReservasCore/ServicioGestion.svc?xsd=xsd2" />
-    <MetadataFile FileName="ServicioGestion1.xsd" MetadataType="Schema" ID="314ad1be-40ef-486e-b2a9-25f1fb54ef30" SourceId="1" SourceUrl="http://localhost/SisReservasCore/ServicioGestion.svc?xsd=xsd1" />
-    <MetadataFile FileName="ServicioGestion2.xsd" MetadataType="Schema" ID="a5a17f6a-4d4a-4b66-b9df-04ce3177b5ac" SourceId="1" SourceUrl="http://localhost/SisReservasCore/ServicioGestion.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServicioGestion1.disco" MetadataType="Disco" ID="70dd11f7-e8bb-4732-a7d5-077bbbfcf3d1" SourceId="1" SourceUrl="http://localhost/SisReservasCore/ServicioGestion.svc?disco" />
+    <MetadataFile FileName="ServicioGestion2.wsdl" MetadataType="Wsdl" ID="f91ca12c-9e88-494f-ac23-c60226f92c20" SourceId="1" SourceUrl="http://localhost/SisReservasCore/ServicioGestion.svc?wsdl" />
+    <MetadataFile FileName="ServicioGestion3.wsdl" MetadataType="Wsdl" ID="550bc049-5910-4fda-ab38-ac8fadb2ec6c" SourceId="1" SourceUrl="http://localhost/SisReservasCore/ServicioGestion.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="ServicioGestion3.xsd" MetadataType="Schema" ID="ea839f55-0d74-4c1b-abc2-990ab6e4713f" SourceId="1" SourceUrl="http://localhost/SisReservasCore/ServicioGestion.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServicioGestion4.xsd" MetadataType="Schema" ID="f8e1cdb9-fbe5-48da-8b75-88ce5d8238ec" SourceId="1" SourceUrl="http://localhost/SisReservasCore/ServicioGestion.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServicioGestion5.xsd" MetadataType="Schema" ID="3ebdacb9-800e-47d7-9d7e-eb1ebdadfbbc" SourceId="1" SourceUrl="http://localhost/SisReservasCore/ServicioGestion.svc?xsd=xsd0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
